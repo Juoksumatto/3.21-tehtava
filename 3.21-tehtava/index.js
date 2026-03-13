@@ -1,6 +1,6 @@
 require('dotenv').config()
 const express = require('express')
-const Person = require('./person')
+const Person = require('./backend/person')
 const app = express()
 const morgan = require('morgan')
 const cors = require('cors')
