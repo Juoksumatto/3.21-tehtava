@@ -15,7 +15,7 @@
     "url": "git+https://github.com/Juoksumatto/Fullstack-3.git"
   },
   "license": "ISC",
-  "author": "Onni Hölttä",
+  "author": "Onni Holtta",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
