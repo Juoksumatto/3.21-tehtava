@@ -9,7 +9,7 @@ const mongoose = require('mongoose')
 
 mongoose.set('strictQuery', false)
 
-process.env.MONGODB_URI
+const url = process.env.MONGODB_URI
 
 mongoose.connect(url)
   .then(result => {
