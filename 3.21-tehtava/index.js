@@ -88,8 +88,8 @@ app.delete('/api/persons/:id', (request, response, next) => {
     .catch(error => next(error))
 })
 
-app.use((request, response) => {
-  response.sendFile(path.join(__dirname, 'backend', 'dist', 'index.html'))
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'backend/dist/index.html'))
 })
 
 const errorHandler = (error, request, response, next) => { 
