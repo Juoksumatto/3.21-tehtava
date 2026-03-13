@@ -19,7 +19,7 @@ mongoose.connect(url)
     console.log('error connecting to MongoDB:', error.message)
   })
 
-app.use(express.static(path.join(__dirname, 'dist')))
+app.use(express.static(path.join(__dirname, 'backend/dist')))
 app.use(express.json())
 app.use(morgan('tiny'))
 app.use(cors())
@@ -89,7 +89,7 @@ app.delete('/api/persons/:id', (request, response, next) => {
 })
 
 app.use((request, response) => {
-  response.sendFile(path.join(__dirname, 'dist', 'index.html'))
+  response.sendFile(path.join(__dirname, 'backend', 'dist', 'index.html'))
 })
 
 const errorHandler = (error, request, response, next) => { 
